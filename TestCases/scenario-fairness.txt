@@ -1,0 +1,25 @@
+SCENARIO C — FAIRNESS TEST
+
+Description:
+All processes have equal burst times.
+
+Processes:
+------------------------------------------------
+Process    Arrival Time    Burst Time    Priority
+------------------------------------------------
+P1          0               12             1
+P2          0               4              2
+P3          0               8              3
+P4          0               6              4
+------------------------------------------------
+
+Round Robin Quantum:
+2
+
+Expected Behaviour:
+- Round Robin should give balanced execution.
+- Each process should receive CPU time equally.
+- Priority Scheduling should favor higher-priority processes.
+
+Purpose:
+To test fairness and CPU sharing behaviour.

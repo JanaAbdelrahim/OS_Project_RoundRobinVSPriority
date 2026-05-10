@@ -1,0 +1,26 @@
+# Build folders
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# Visual Studio
+.vs/
+
+# CodeBlocks
+bin/
+obj/
+
+# Executables
+*.exe
+*.out
+
+# SFML DLL copies
+*.dll
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

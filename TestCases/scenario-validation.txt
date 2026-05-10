@@ -1,0 +1,22 @@
+SCENARIO E — INPUT VALIDATION
+
+Description:
+This scenario tests invalid input handling.
+
+Processes:
+------------------------------------------------
+Process    Arrival Time    Burst Time    Priority
+------------------------------------------------
+P1          0               5             2
+------------------------------------------------
+
+Round Robin Quantum:
+0
+
+Expected Behaviour:
+- The simulator should reject Quantum = 0.
+- Validation error message should appear.
+- Simulation should not start until valid input is entered.
+
+Purpose:
+To verify input validation and error handling.

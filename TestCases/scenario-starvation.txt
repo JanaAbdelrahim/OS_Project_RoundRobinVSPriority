@@ -1,0 +1,26 @@
+SCENARIO D — STARVATION CASE
+
+Description:
+This scenario demonstrates starvation risk in Priority Scheduling.
+
+Processes:
+------------------------------------------------
+Process    Arrival Time    Burst Time    Priority
+------------------------------------------------
+P1          0               3             1
+P2          0               5             1
+P3          0               4             2
+P4          0               6             5
+P5          0               3             5
+------------------------------------------------
+
+Round Robin Quantum:
+2
+
+Expected Behaviour:
+- P5 may wait for a very long time in Priority Scheduling.
+- Round Robin should still allow P5 to execute fairly.
+- Starvation should be visible in Priority Scheduling.
+
+Purpose:
+To demonstrate starvation problems in Priority Scheduling.

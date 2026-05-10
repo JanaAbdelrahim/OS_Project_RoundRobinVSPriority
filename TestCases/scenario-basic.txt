@@ -1,0 +1,27 @@
+SCENARIO A — BASIC WORKLOAD
+
+Description:
+Basic scheduling test with mixed arrival times and burst times.
+
+Processes:
+------------------------------------------------
+Process    Arrival Time    Burst Time    Priority
+------------------------------------------------
+P1          0               8             3
+P2          1               4             1
+P3          2               6             2
+P4          3               3             4
+P5          4               5             2
+------------------------------------------------
+
+Round Robin Quantum:
+3
+
+Expected Behaviour:
+- Round Robin should distribute CPU time fairly.
+- Priority Scheduling should prioritize P2 first.
+- Preemptive Priority may interrupt currently running processes.
+- Round Robin should prevent starvation.
+
+Purpose:
+To test normal scheduling behaviour with mixed workloads.
